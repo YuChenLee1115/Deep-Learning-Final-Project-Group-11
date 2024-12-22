@@ -55,7 +55,18 @@ project_directory/
 └── bcss_dataset.py
 ```
 
-### 5. Run the Main Program
+### 5.Dataset
+
+```bash
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("whats2000/breast-cancer-semantic-segmentation-bcss")
+
+print("Path to dataset files:", path)
+```
+
+### 6. Run the Main Program
 
 Execute model_13.ipynb in Jupyter Notebook
 
@@ -104,7 +115,7 @@ The program will automatically execute the following steps:
     * Creates radar charts for multi-dimensional comparison
     * Exports comparison results to CSV file
 
-### 6. View Results
+### 7. View Results
 
 After training completion, the training process and final model performance visualizations will be displayed in the last cell.
 
