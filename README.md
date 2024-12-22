@@ -39,7 +39,19 @@ conda install pytorch torchvision torchaudio pytorch-cuda=12.4 -c pytorch -c nvi
 pip install imbalanced-learn optuna
 ```
 
-### 3. Data Preparation
+### 3. Dataset
+
+```bash
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("whats2000/breast-cancer-semantic-segmentation-bcss")
+
+print("Path to dataset files:", path)
+```
+[Dataset Download Link](https://www.kaggle.com/datasets/whats2000/breast-cancer-semantic-segmentation-bcss)
+
+### 4. Data Preparation
 
 Place the dataset in the 'archive' folder under the project directory, including the following files:
 The folder structure should be as follows:
@@ -55,19 +67,7 @@ project_directory/
 └── bcss_dataset.py
 ```
 
-### 5.Dataset
-
-```bash
-import kagglehub
-
-# Download latest version
-path = kagglehub.dataset_download("whats2000/breast-cancer-semantic-segmentation-bcss")
-
-print("Path to dataset files:", path)
-```
-[Dataset Download Link](https://www.kaggle.com/datasets/whats2000/breast-cancer-semantic-segmentation-bcss)
-
-### 6. Run the Main Program
+### 5. Run the Main Program
 
 Execute model_13.ipynb in Jupyter Notebook
 
@@ -116,7 +116,7 @@ The program will automatically execute the following steps:
     * Creates radar charts for multi-dimensional comparison
     * Exports comparison results to CSV file
 
-### 7. View Results
+### 6. View Results
 
 After training completion, the training process and final model performance visualizations will be displayed in the last cell.
 
