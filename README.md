@@ -65,7 +65,7 @@ path = kagglehub.dataset_download("whats2000/breast-cancer-semantic-segmentation
 
 print("Path to dataset files:", path)
 ```
-[text](https://www.kaggle.com/datasets/whats2000/breast-cancer-semantic-segmentation-bcss)
+[Dataset Download Link](https://www.kaggle.com/datasets/whats2000/breast-cancer-semantic-segmentation-bcss)
 
 ### 6. Run the Main Program
 
